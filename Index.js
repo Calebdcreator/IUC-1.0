@@ -38,7 +38,7 @@ sock.ev.on('messages.upsert', async ({ messages }) => {
             return sock.sendMessage(from, { text: '❌ Incorrect password!' });
         }
 
-        const image = fs.readFileSync('./assets/iuc-menu.jpg'); // Add your menu image here
+        const image = fs.readFileSync('./assets/9b4f97aec3b01076cfc1596cf3779fe5.jpg');
         const caption = `*📜 IUC 1.0 BOT MENU 📜*
 
 Select a category:
