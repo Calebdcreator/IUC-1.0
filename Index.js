@@ -2,7 +2,7 @@
 
 const { default: makeWASocket, useMultiFileAuthState, fetchLatestBaileysVersion, DisconnectReason, generatePairingCode } = require('@whiskeysockets/baileys'); const P = require('pino'); const fs = require('fs'); const { Boom } = require('@hapi/boom');
 
-const PREFIX = '.'; const PASSWORD = 'iucpass123'; // Change this to your desired bot password
+const PREFIX = '.'; const PASSWORD = 'iucpass123'; 
 
 async function startBot() { const { state, saveCreds } = await useMultiFileAuthState('auth_info'); const { version } = await fetchLatestBaileysVersion();
 
